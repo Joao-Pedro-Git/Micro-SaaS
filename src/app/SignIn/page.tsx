@@ -1,6 +1,16 @@
+// Css
 import "../globals.css";
 import "./SignInCss.css";
 
+// Head from SEO
+import Head from "next/head";
+
+// Imagens and Icons
+import Image from "next/image";
+import ImgSite from "../../../public/site.png";
+import ImgSitee from "../../../public/sitee.png";
+
+// Components shadcn
 import {
   Card,
   CardHeader,
@@ -22,13 +32,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../../components/ui/carousel";
-import Image from "next/image";
-import ImgSite from "../../../public/site.png";
-import ImgSitee from "../../../public/sitee.png";
 
 export default function SignIn() {
   return (
     <>
+      <Head>
+        <title>Entrar na Plataforma - Moost Digital Lab</title>
+        <meta
+          name="description"
+          content="Faça login para acessar sua conta e aproveitar os recursos exclusivos da nossa plataforma."
+        />
+      </Head>
+
       <main className="h-screen flex w-full">
         <div className="bg-primary-foreground  w-[100vh] h-full items-center justify-center flex p-16 imgsSignIn">
           <Carousel className="w-full max-w-xl">

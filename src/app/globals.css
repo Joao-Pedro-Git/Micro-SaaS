@@ -4,6 +4,7 @@
 
 body {
   font-family: var(--font-family-dmsans);
+  background-color: #ffffff;
 }
 
 @layer base {
@@ -70,5 +71,36 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Pag initial css */
+.aside-pag-initial {
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+/* button goTop */
+#goTop {
+  color: white;
+  background-color: #854bec;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+#goTop span {
+  font-size: 1.2rem;
+  transition: transform 0.5s ease-in-out, margin-bottom 0.5s ease; /* Animação suave para a seta */
+}
+#goTop span:hover {
+  transform: translateY(-2px); /* Move a seta para cima */
+  margin-bottom: 2px; /* Suaviza o efeito de deslocamento */
+}
+#goTop:hover {
+  transform: translateY(-6px); /* Movimento sutil do botão completo */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra mais forte */
+}
+
+@media screen and (max-with: 1208px) {
+  .signin-aside {
+    margin-top: 200px !important;
   }
 }

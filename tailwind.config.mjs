@@ -12,6 +12,7 @@ export default {
 				sans: ['var(--font-family-dmsans)', 'sans-serif'],
 			},
 			colors: {
+				colorPadrao: '#854BEC',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {
