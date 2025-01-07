@@ -5,6 +5,27 @@
 body {
   font-family: var(--font-family-dmsans);
   background-color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* Estilo para a barra de rolagem horizontal (scroll X) */
+::-webkit-scrollbar {
+  height: 0px; /* Remove a barra de rolagem horizontal */
+}
+
+/* Estilo para a barra de rolagem vertical (scroll Y) */
+::-webkit-scrollbar:vertical {
+  width: 4px; /* Define a largura da barra de rolagem vertical */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7b3aed; /* Cor do polegar da barra de rolagem */
+  border-radius: 5px; /* Bordas arredondadas para um visual mais moderno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra leve para dar destaque */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9b30ff; /* Cor do polegar quando o usuário passa o mouse */
 }
 
 @layer base {
@@ -97,10 +118,4 @@ body {
 #goTop:hover {
   transform: translateY(-6px); /* Movimento sutil do botão completo */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra mais forte */
-}
-
-@media screen and (max-with: 1208px) {
-  .signin-aside {
-    margin-top: 200px !important;
-  }
 }
